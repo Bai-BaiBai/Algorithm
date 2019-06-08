@@ -6,6 +6,7 @@
 #include "SortTestHelper.h"
 #include "QuickSort.h"
 #include "MergeSort.h"
+#include "MaxHeap.h"
 using namespace std;
 
 int main() {
@@ -16,6 +17,9 @@ int main() {
     SortTestHelper::printArray(arr, n);
 
     delete[] arr;
+
+    MaxHeap<int> maxHeap(100);
+    cout << maxHeap.size() << endl;
 
     return 0;
 }
