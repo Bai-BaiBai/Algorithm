@@ -50,6 +50,19 @@ public:
         this -> capacity = capacity;
     }
 
+    //将一个数组heapify
+    MaxHeap(Item arr[], int n){
+        data = new Item[n+1];
+        capacity = n;
+        for (int i = 0; i < n; ++i) {
+            data[i+1] = arr[i];
+        }
+        count = n;
+        for (int j = count/2; j > 0 ; j--) {//从最后一个非叶子节点开始，向前逐个进行shiftDown操作
+            shiftDown(data[j]);
+        }
+    }
+
     ~MaxHeap(){
         delete [] data;
     }
