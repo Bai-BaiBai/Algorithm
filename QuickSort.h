@@ -24,7 +24,7 @@ namespace QuickSort{
             return;
         }
 
-        //partition操作
+        //partition操作, 过程中数组分为三部分 [小于基准值...等于基准值...大于基准值]
         swap(arr[l], arr[rand()%(r-l+1) + l]);
         T e = arr[l];
         int lt = l;//arr[l+1..lt] < e
@@ -55,9 +55,9 @@ namespace QuickSort{
         __quickSort3Ways(arr, 0, n-1);
     }
 
-    //双路快排
+    //双路快排,和单路快排相比，只有partition部分操作不同
     template <typename T>
-    int __partition2(T arr[], int l, int r){
+    int __partition_2way(T arr[], int l, int r){
         swap(arr[l], arr[rand()%(r-l+1) + l]);
 
         T e = arr[l];
@@ -70,8 +70,9 @@ namespace QuickSort{
             i++;
             j--;
         }
-        swap(arr[l], arr[j]);//break后，如果i=j说明arr[j]和arr[l]相等，如果j < i 此时arr[j] < arr[l] ，将arr[l]换到中间和arr[j]换
+        swap(arr[l], arr[j]);//break后，如果i=j说明arr[j]和arr[l]相等 = e，如果j < i 此时arr[j] < arr[l] ，将arr[l]换到中间和arr[j]换
 
+        // 此时数组中 arr[l...j)<= e ; arr(j...r]>= e
         return j;
     }
 
@@ -102,7 +103,7 @@ namespace QuickSort{
             return;
         }
 
-        int p = __partition2(arr, l, r);
+        int p = __partition_2way(arr, l, r);
         __quickSort(arr, l, p-1);
         __quickSort(arr, p+1, r);
     }
