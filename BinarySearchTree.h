@@ -5,6 +5,11 @@
 #ifndef ALGORITHM_BINARYSEARCHTREE_H
 #define ALGORITHM_BINARYSEARCHTREE_H
 
+#include <iostream>
+#include <queue>
+
+using namespace std;
+
 namespace BinarySearchTree{
 
     template <typename Key, template Value>
@@ -32,7 +37,7 @@ namespace BinarySearchTree{
             count = 0;
         }
         ~BST(){
-            // TODO
+            destory(root);
         }
 
         int size(){ return  count;}
@@ -49,6 +54,28 @@ namespace BinarySearchTree{
         // 返回指向value的指针，如果没找到返回null
         Value* search(Key key){
             return search(root, key);
+        }
+
+        // 前序遍历
+        void preOrder(){
+            preOrder(root);
+        }
+
+        // 中序遍历
+        void inOrder(){
+            inOrder(root);
+        }
+
+        // 层序遍历
+        void levelOrder(){
+            queue<Node*> q;
+            q.push(root);
+            while (!q.empty()){
+                Node *node = q.pop();
+                cout << node->key << endl;
+                if (node->left != NULL) q.push(node->left);
+                if (node->right != NULL) q.push(node->right);
+            }
         }
 
     private:
@@ -82,6 +109,32 @@ namespace BinarySearchTree{
             if (key == node->key) return &(node->value);
             else if (key < node->key) return search(node->left, key);
             else return search(node->right, key);
+        }
+
+        // 对以node为根的二叉树前序遍历
+        void preOrder(Node* node){
+            if (node != NULL){
+                cout << node->key << endl;
+                preOrder(node->left);
+                preOrder(node->right);
+            }
+        }
+
+        void inOrder(Node* node){
+            if (node != NULL){
+                inOrder(node->left);
+                cout << node->key << endl;
+                inOrder(node->right);
+            }
+        }
+
+        void destory(Node* node){
+            if (node != NULL){
+                destory(node->left);
+                destory(node->right);
+                delete node;
+                count--;
+            }
         }
     };
 }
