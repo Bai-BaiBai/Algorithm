@@ -7,6 +7,7 @@
 
 #include <iostream>
 #include <queue>
+#include <cassert>
 
 using namespace std;
 
@@ -26,6 +27,13 @@ namespace BinarySearchTree{
                 this ->key = key;
                 this ->value = value;
                 this -> left = this -> right = NULL;
+            }
+
+            Node(Node *node){
+                this->key = node->key;
+                this->value = node->value;
+                this->left = node->left;
+                this->right = node->right;
             }
         };
         Node *root;
@@ -75,6 +83,26 @@ namespace BinarySearchTree{
                 cout << node->key << endl;
                 if (node->left != NULL) q.push(node->left);
                 if (node->right != NULL) q.push(node->right);
+            }
+        }
+
+        // 寻找最小值
+        Key minimum(){
+            assert(count != 0);
+            Node *minNode = minimum(root);
+        }
+
+        // 删除最小值
+        void removeMin(){
+            if (root != NULL){
+                root = removeMin(root);
+            }
+        }
+
+        // 删除任意节点
+        void remove(Key key){
+            if (root != NULL){
+                root = remove(root, key);
             }
         }
 
@@ -134,6 +162,55 @@ namespace BinarySearchTree{
                 destory(node->right);
                 delete node;
                 count--;
+            }
+        }
+
+        Node* minimum(Node* node){
+            if (node->left == NULL) return node;
+            return minimum(node->left);
+        }
+
+        // 删除最小节点
+        Node* removeMin(Node* node){
+            if (node->left == NULL){
+                Node* rightNode = node->right;
+                delete node;
+                count --;
+                return rightNode;
+            }
+            node->left = removeMin(node->left);
+            return node;
+        }
+
+        Node* remove(Node* node, Key key){
+            if (node == NULL) return NULL;
+
+            if (key < node->key){
+                node->left = remove(node->left, key);
+                return node;
+            } else if (key > node->key){
+                node->right = remove(node->right, key);
+                return node;
+            } else {
+                if (node->left == NULL){
+                    Node *rightNode = node->right;
+                    delete node;
+                    count --;
+                    return rightNode;
+                }
+                if (node->right == NULL){
+                    Node *leftNode = node->left;
+                    delete node;
+                    count --;
+                    return leftNode;
+                }
+                // node的左右孩子都不为空
+                Node *nextRoot = new Node(minimum(node->right));
+                nextRoot->right = removeMin(node->right);
+                nextRoot->left = node->left;
+                delete node;
+                // 不需要 count --, 因为在removeMin中已经删除了一个节点
+                return nextRoot;
             }
         }
     };
