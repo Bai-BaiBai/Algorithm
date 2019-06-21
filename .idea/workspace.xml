@@ -11,9 +11,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b19f864d-b27c-4464-9cf4-f24ea53204df" name="Default Changelist" comment="并查集-UnionFind">
+    <list default="true" id="b19f864d-b27c-4464-9cf4-f24ea53204df" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/DenseGraph.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UnionFind.h" beforeDir="false" afterPath="$PROJECT_DIR$/UnionFind.h" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,11 +28,23 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/UnionFind.h">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="500">
-              <caret line="38" column="13" lean-forward="true" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+              <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/DenseGraph.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="350">
+              <caret line="43" column="16" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="16" />
+              <folding>
+                <element signature="e#108#125#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -65,6 +77,7 @@
         <option value="$PROJECT_DIR$/QuickSort.h" />
         <option value="$PROJECT_DIR$/BinarySearchTree.h" />
         <option value="$PROJECT_DIR$/UnionFind.h" />
+        <option value="$PROJECT_DIR$/DenseGraph.h" />
       </list>
     </option>
   </component>
@@ -157,7 +170,8 @@
       <workItem from="1560944547375" duration="1524000" />
       <workItem from="1560946556423" duration="453000" />
       <workItem from="1560947086835" duration="33000" />
-      <workItem from="1560987817851" duration="1917000" />
+      <workItem from="1560987817851" duration="1935000" />
+      <workItem from="1561074639307" duration="1001000" />
     </task>
     <task id="LOCAL-00001" summary="initial project">
       <created>1558184350336</created>
@@ -327,11 +341,18 @@
       <option name="project" value="LOCAL" />
       <updated>1560947002273</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="并查集-UnionFind">
+      <created>1561005292283</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1561005292283</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75497000" />
+    <option name="totallyTimeSpent" value="76516000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -346,8 +367,8 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5991501" visible="true" weight="0.19034852" />
-      <window_info id="Structure" order="1" sideWeight="0.40084985" side_tool="true" visible="true" weight="0.19034852" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.59773374" visible="true" weight="0.1930295" />
+      <window_info id="Structure" order="1" sideWeight="0.4022663" side_tool="true" visible="true" weight="0.1930295" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -581,7 +602,17 @@
     <entry file="file://$PROJECT_DIR$/UnionFind.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="500">
-          <caret line="38" column="13" lean-forward="true" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+          <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DenseGraph.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="43" column="16" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="16" />
+          <folding>
+            <element signature="e#108#125#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
