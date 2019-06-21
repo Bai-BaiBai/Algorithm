@@ -12,7 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b19f864d-b27c-4464-9cf4-f24ea53204df" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/DenseGraph.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SparseGraph.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -37,13 +37,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DenseGraph.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="43" column="16" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="16" />
+            <state relative-caret-position="200">
+              <caret line="32" column="38" lean-forward="true" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="38" />
               <folding>
                 <element signature="e#108#125#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SparseGraph.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="550">
+              <caret line="53" column="9" lean-forward="true" selection-start-line="53" selection-start-column="9" selection-end-line="53" selection-end-column="9" />
+              <folding>
+                <element signature="e#110#129#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -78,6 +90,7 @@
         <option value="$PROJECT_DIR$/BinarySearchTree.h" />
         <option value="$PROJECT_DIR$/UnionFind.h" />
         <option value="$PROJECT_DIR$/DenseGraph.h" />
+        <option value="$PROJECT_DIR$/SparseGraph.h" />
       </list>
     </option>
   </component>
@@ -171,7 +184,7 @@
       <workItem from="1560946556423" duration="453000" />
       <workItem from="1560947086835" duration="33000" />
       <workItem from="1560987817851" duration="1935000" />
-      <workItem from="1561074639307" duration="1001000" />
+      <workItem from="1561074639307" duration="2734000" />
     </task>
     <task id="LOCAL-00001" summary="initial project">
       <created>1558184350336</created>
@@ -348,11 +361,18 @@
       <option name="project" value="LOCAL" />
       <updated>1561005292283</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="稠密图-邻接矩阵">
+      <created>1561075707410</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1561075707410</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76516000" />
+    <option name="totallyTimeSpent" value="78249000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -449,7 +469,8 @@
     <MESSAGE value="二分搜索树" />
     <MESSAGE value="并查集-QuickUnion" />
     <MESSAGE value="并查集-UnionFind" />
-    <option name="LAST_COMMIT_MESSAGE" value="并查集-UnionFind" />
+    <MESSAGE value="稠密图-邻接矩阵" />
+    <option name="LAST_COMMIT_MESSAGE" value="稠密图-邻接矩阵" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/selectionsort.cpp" />
@@ -608,10 +629,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DenseGraph.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="43" column="16" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="16" />
+        <state relative-caret-position="200">
+          <caret line="32" column="38" lean-forward="true" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="38" />
           <folding>
             <element signature="e#108#125#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SparseGraph.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="53" column="9" lean-forward="true" selection-start-line="53" selection-start-column="9" selection-end-line="53" selection-end-column="9" />
+          <folding>
+            <element signature="e#110#129#0" expanded="true" />
           </folding>
         </state>
       </provider>
