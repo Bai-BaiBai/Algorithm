@@ -5,6 +5,7 @@
 #ifndef ALGORITHM_SPARSEGRAPH_H
 #define ALGORITHM_SPARSEGRAPH_H
 
+#include <iostream>
 #include <cassert>
 #include <vector>
 
@@ -51,6 +52,17 @@ namespace SparseGraph{
                 if (g[v][i] == w) return true;
             }
             return false;
+        }
+
+        // 打印邻接表
+        void show(){
+            for (int i = 0; i < n; ++i) {
+                cout << "vertex" << i << ":\t";
+                for (int j = 0; j < g[i].size(); ++j) {
+                    cout << g[i][j] << "\t";
+                }
+                cout << endl;
+            }
         }
 
         // 稀疏图的迭代器
