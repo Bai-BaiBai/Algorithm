@@ -5,6 +5,7 @@
 #ifndef ALGORITHM_DENSEGRAPH_H
 #define ALGORITHM_DENSEGRAPH_H
 
+#include <iostream>
 #include <vector>
 #include <cassert>
 
@@ -48,6 +49,16 @@ namespace DenseGraph{
             assert(v >= 0 && v <n);
             assert(w >= 0 && w < n);
             return g[v][w];
+        }
+
+        // 打印邻接矩阵
+        void show(){
+            for (int i = 0; i < n; ++i) {
+                for (int j = 0; j < n; ++j) {
+                    cout << g[i][j] << "\t";
+                }
+                cout << endl;
+            }
         }
 
         // 稠密图的迭代器
