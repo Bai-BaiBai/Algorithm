@@ -52,6 +52,53 @@ namespace SparseGraph{
             }
             return false;
         }
+
+        // 稀疏图的迭代器
+        class adjIterator{
+        private:
+            SparseGraph &G;// 要迭代哪张图
+            int v;// 要迭代图中的哪个点
+            int index;// 当前迭代到哪步
+        public:
+            adjIterator(SparseGraph &graph, int v): G(graph){
+                this->v = v;
+                this->index = 0;
+            }
+
+            // 返回要迭代的第一个元素
+            int begin(){
+                index = 0;
+                if (G.g[v].size()){// 如果节点v 的邻接表不为空
+                    return G.g[v][0];
+                }
+                return -1;
+            }
+
+            // 返回要迭代的下一个元素
+            int next(){
+                index ++;
+                if (index < G.g[v].size()){
+                    return G.g[v][index];
+                }
+                return -1;
+            }
+
+            // 检查迭代是否结束
+            bool end(){
+                return index >= G.g[v].size()
+            }
+
+            /*
+            // 使用示例
+            void example(){
+                SparseGraph g1(100, false);
+                SparseGraph::adjIterator adj(g1, 0);
+                for (int i = adj.begin(); !adj.end(); i = adj.next()) {
+                    // 迭代
+                }
+            }
+            */
+        };
     };
 }
 
