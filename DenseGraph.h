@@ -49,6 +49,52 @@ namespace DenseGraph{
             assert(w >= 0 && w < n);
             return g[v][w];
         }
+
+        // 稠密图的迭代器
+        class adjIterator{
+        private:
+            DenseGraph &G;// 要迭代哪张图
+            int v;// 要迭代图中的哪个点
+            int index;// 当前迭代到哪步
+        public:
+            adjIterator(DenseGraph &graph, int v): G(graph){
+                this->v = v;
+                this->index = -1;
+            }
+
+            // 返回要迭代的第一个元素
+            int begin(){
+                index = -1;
+                return next();
+            }
+
+            // 返回要迭代的下一个元素
+            int next(){
+                for (index++ ; index < G.V(); index ++) {
+                    // 每次查看index下一个元素 在矩阵中是否对应true
+                    if(G.g[v][index]){
+                        return index;
+                    }
+                }
+                return -1;
+            }
+
+            // 检查迭代是否结束
+            bool end(){
+                return index >= G.V();
+            }
+
+            /*
+            // 使用示例
+            void example(){
+                DenseGraph g1(100, false);
+                DenseGraph::adjIterator adj(g1, 0);
+                for (int i = adj.begin(); !adj.end(); i = adj.next()) {
+                    // 迭代
+                }
+            }
+            */
+        };
     };
 }
 
