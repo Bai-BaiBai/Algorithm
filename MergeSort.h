@@ -15,12 +15,12 @@ namespace MergeSort{
     //对arr[l...mid]和arr[mid+1...r]两部分合并
     template <typename T>
     void __merge(T arr[], int l, int mid, int r){
-        T aux[r-l+1]; //作为辅助数组，方便比较
+        T aux[r-l+1]; //作为辅助数组，方便比较  r-L+1
         for (int i = l; i <= r; ++i) {
-            aux[i-l] = arr[i];//因为aux数组有l的偏移量，所以减去l
+            aux[i-l] = arr[i];//因为aux数组有L的偏移量，所以减去L
         }
-        int i = l, j = mid+1;
-        for (int k = l; k <= r; ++k) {
+        int i = l, j = mid+1;// i为arr[l...mid]的指针，j为arr[mid+1...r]的指针
+        for (int k = l; k <= r; ++k) { // 代码中全是L, 存在L的偏移量，因为aux辅助数组是从0存储，进行merge的原数组位置不确定
 
             if(i > mid){ //前两步判断索引合法性
                 arr[k] = aux[j-l];
