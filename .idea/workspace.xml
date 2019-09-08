@@ -12,8 +12,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b19f864d-b27c-4464-9cf4-f24ea53204df" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Component.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Component.h" beforeDir="false" afterPath="$PROJECT_DIR$/Component.h" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -43,8 +43,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Component.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+            <state relative-caret-position="275">
+              <caret line="48" column="10" lean-forward="true" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="10" />
               <folding>
                 <element signature="e#158#177#0" expanded="true" />
               </folding>
@@ -187,7 +187,7 @@
       <workItem from="1562983352165" duration="1092000" />
       <workItem from="1563755055785" duration="600000" />
       <workItem from="1566274001285" duration="5705000" />
-      <workItem from="1567941014491" duration="1296000" />
+      <workItem from="1567941014491" duration="1764000" />
     </task>
     <task id="LOCAL-00001" summary="initial project">
       <created>1558184350336</created>
@@ -427,11 +427,18 @@
       <option name="project" value="LOCAL" />
       <updated>1561895860539</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="深度优先遍历求联通分量个数">
+      <created>1567942339306</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1567942339306</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93513000" />
+    <option name="totallyTimeSpent" value="93981000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -532,7 +539,8 @@
     <MESSAGE value="读取图" />
     <MESSAGE value="图的相关算法" />
     <MESSAGE value="归并排序" />
-    <option name="LAST_COMMIT_MESSAGE" value="归并排序" />
+    <MESSAGE value="深度优先遍历求联通分量个数" />
+    <option name="LAST_COMMIT_MESSAGE" value="深度优先遍历求联通分量个数" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/selectionsort.cpp" />
@@ -728,8 +736,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Component.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+        <state relative-caret-position="275">
+          <caret line="48" column="10" lean-forward="true" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="10" />
           <folding>
             <element signature="e#158#177#0" expanded="true" />
           </folding>
