@@ -12,8 +12,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b19f864d-b27c-4464-9cf4-f24ea53204df" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/FindPath.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Component.h" beforeDir="false" afterPath="$PROJECT_DIR$/Component.h" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,10 +29,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DenseGraph.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SparseGraph.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1075">
-              <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
+            <state relative-caret-position="700">
+              <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
               <folding>
                 <element signature="e#110#129#0" expanded="true" />
               </folding>
@@ -40,19 +49,46 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Component.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="48" column="10" lean-forward="true" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="10" />
+            <state relative-caret-position="425">
+              <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
               <folding>
-                <element signature="e#158#177#0" expanded="true" />
+                <element signature="e#166#182#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/FindPath.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="350">
+              <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+              <folding>
+                <element signature="e#105#124#0" expanded="true" />
+                <element signature="e#161#177#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="5" column="18" lean-forward="true" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>asser</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -85,6 +121,7 @@
         <option value="$PROJECT_DIR$/ReadGraph.h" />
         <option value="$PROJECT_DIR$/MergeSort.h" />
         <option value="$PROJECT_DIR$/Component.h" />
+        <option value="$PROJECT_DIR$/FindPath.h" />
       </list>
     </option>
   </component>
@@ -104,6 +141,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -115,7 +153,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -187,7 +224,9 @@
       <workItem from="1562983352165" duration="1092000" />
       <workItem from="1563755055785" duration="600000" />
       <workItem from="1566274001285" duration="5705000" />
-      <workItem from="1567941014491" duration="1764000" />
+      <workItem from="1567941014491" duration="2373000" />
+      <workItem from="1576845975867" duration="11000" />
+      <workItem from="1577284978986" duration="3704000" />
     </task>
     <task id="LOCAL-00001" summary="initial project">
       <created>1558184350336</created>
@@ -434,11 +473,18 @@
       <option name="project" value="LOCAL" />
       <updated>1567942339306</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="深度优先遍历求联通分量个数">
+      <created>1567942787288</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1567942787288</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93981000" />
+    <option name="totallyTimeSpent" value="98305000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -450,11 +496,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.58498585" visible="true" weight="0.21715818" />
-      <window_info id="Structure" order="1" sideWeight="0.41501418" side_tool="true" visible="true" weight="0.21715818" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5802603" visible="true" weight="0.2238806" />
+      <window_info id="Structure" order="1" sideWeight="0.4197397" side_tool="true" visible="true" weight="0.2238806" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -467,7 +513,7 @@
       <window_info anchor="bottom" id="Messages" order="8" weight="0.3286119" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32956153" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="11" weight="0.3281471" />
+      <window_info anchor="bottom" id="Version Control" order="11" weight="0.3275488" />
       <window_info anchor="bottom" id="CMake" order="12" weight="0.32956153" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -595,16 +641,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
-          <folding>
-            <element signature="e#44#63#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HeapSort.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1450">
@@ -649,13 +685,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="550">
           <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DenseGraph.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -707,6 +736,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-100">
+          <caret line="32" column="49" lean-forward="true" selection-start-line="32" selection-start-column="49" selection-end-line="32" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Graph.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -716,7 +752,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ReadGraph.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
+        <state relative-caret-position="75">
           <caret line="22" selection-start-line="22" selection-end-line="22" />
           <folding>
             <element signature="e#113#132#0" expanded="true" />
@@ -724,22 +760,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="18" lean-forward="true" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Component.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+          <folding>
+            <element signature="e#166#182#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/SparseGraph.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1075">
-          <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
+        <state relative-caret-position="700">
+          <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
           <folding>
             <element signature="e#110#129#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Component.h">
+    <entry file="file://$PROJECT_DIR$/DenseGraph.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="48" column="10" lean-forward="true" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="10" />
+        <state relative-caret-position="175">
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FindPath.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
           <folding>
-            <element signature="e#158#177#0" expanded="true" />
+            <element signature="e#105#124#0" expanded="true" />
+            <element signature="e#161#177#0" expanded="true" />
           </folding>
         </state>
       </provider>
